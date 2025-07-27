@@ -5,7 +5,6 @@
 **/.DS_Store
 
 # General
-.vscode/
 .idea/
 
 # Rust

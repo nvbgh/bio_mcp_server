@@ -13,7 +13,7 @@ This document outlines a detailed, step-by-step plan to create a Rust-based MCP 
   * **Action**: Create a `README.md` file in the project root. It should briefly describe the project's purpose, how to build and run it, and any other essential information for new contributors.
   * **Test (Manual)**: A `README.md` file exists in the project root and contains the necessary information.
 
-* [ ] #### **Step 0.2: Recommend VS Code Extensions**
+* [x] #### **Step 0.2: Recommend VS Code Extensions**
 
   * **Action**: Create a `.vscode/extensions.json` file. This file will recommend essential extensions for Rust development to anyone opening the project in VS Code.
         ```json
