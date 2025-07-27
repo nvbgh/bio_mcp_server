@@ -27,12 +27,12 @@ This document outlines a detailed, step-by-step plan to create a Rust-based MCP 
         ```
   * **Test (Manual)**: When the project is opened in VS Code, a notification appears prompting the user to install the recommended extensions.
 
-* [ ] #### **Step 0.3: Configure Code Formatting (rustfmt)**
+* [x] #### **Step 0.3: Configure Code Formatting (rustfmt)**
 
   * **Action**: `rustfmt` is the standard Rust code formatter and is typically installed with Rust itself. Create a `rustfmt.toml` file in the project root to configure any project-specific formatting rules (even an empty file is fine to signal its use).
   * **Test (Automated)**: Run `cargo fmt -- --check` from the terminal. The command should complete without errors, indicating all files are correctly formatted.
 
-* [ ] #### **Step 0.4: Configure Linting (Clippy)**
+* [x] #### **Step 0.4: Configure Linting (Clippy)**
 
   * **Action**: `clippy` is the standard Rust linter. It's an incredibly powerful tool for catching common mistakes and improving code quality. It is typically installed with Rust.
   * **Test (Automated)**: Run `cargo clippy -- -D warnings` from the terminal. This command runs Clippy and treats all warnings as errors. The command should complete without any errors.
