@@ -8,7 +8,7 @@ This document outlines a detailed, step-by-step plan to create a Rust-based MCP 
 
 **Goal**: Establish the project structure and confirm that Cursor can launch a basic version of our server.
 
-* [ ] #### **Step 1.1: Initialize Rust Project**
+* [x] #### **Step 1.1: Initialize Rust Project**
 
   * **Action**: Create a new Rust binary project.
 
@@ -19,7 +19,7 @@ This document outlines a detailed, step-by-step plan to create a Rust-based MCP 
 
   * **Test (Manual)**: Verify that a `rust_mcp_server` directory is created containing `Cargo.toml` and a `src` directory with `main.rs`.
 
-* [ ] #### **Step 1.2: Add Initial Dependencies**
+* [x] #### **Step 1.2: Add Initial Dependencies**
 
   * **Action**: Edit `Cargo.toml` to include essential libraries for asynchronous operations, serialization, and logging.
 
