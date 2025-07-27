@@ -8,7 +8,7 @@ This document outlines a detailed, step-by-step plan to create a Rust-based MCP 
 
 **Goal**: Set up a robust development environment to ensure code quality, consistency, and maintainability.
 
-* [ ] #### **Step 0.1: Create a README**
+* [x] #### **Step 0.1: Create a README**
 
   * **Action**: Create a `README.md` file in the project root. It should briefly describe the project's purpose, how to build and run it, and any other essential information for new contributors.
   * **Test (Manual)**: A `README.md` file exists in the project root and contains the necessary information.
