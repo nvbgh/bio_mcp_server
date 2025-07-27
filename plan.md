@@ -4,6 +4,53 @@ This document outlines a detailed, step-by-step plan to create a Rust-based MCP 
 
 ---
 
+## Phase 0: Developer Environment & Best Practices
+
+**Goal**: Set up a robust development environment to ensure code quality, consistency, and maintainability.
+
+* [ ] #### **Step 0.1: Create a README**
+
+  * **Action**: Create a `README.md` file in the project root. It should briefly describe the project's purpose, how to build and run it, and any other essential information for new contributors.
+  * **Test (Manual)**: A `README.md` file exists in the project root and contains the necessary information.
+
+* [ ] #### **Step 0.2: Recommend VS Code Extensions**
+
+  * **Action**: Create a `.vscode/extensions.json` file. This file will recommend essential extensions for Rust development to anyone opening the project in VS Code.
+        ```json
+        {
+          "recommendations": [
+            "rust-lang.rust-analyzer",
+            "tamasfe.even-better-toml",
+            "serayuzgur.crates"
+          ]
+        }
+        ```
+  * **Test (Manual)**: When the project is opened in VS Code, a notification appears prompting the user to install the recommended extensions.
+
+* [ ] #### **Step 0.3: Configure Code Formatting (rustfmt)**
+
+  * **Action**: `rustfmt` is the standard Rust code formatter and is typically installed with Rust itself. Create a `rustfmt.toml` file in the project root to configure any project-specific formatting rules (even an empty file is fine to signal its use).
+  * **Test (Automated)**: Run `cargo fmt -- --check` from the terminal. The command should complete without errors, indicating all files are correctly formatted.
+
+* [ ] #### **Step 0.4: Configure Linting (Clippy)**
+
+  * **Action**: `clippy` is the standard Rust linter. It's an incredibly powerful tool for catching common mistakes and improving code quality. It is typically installed with Rust.
+  * **Test (Automated)**: Run `cargo clippy -- -D warnings` from the terminal. This command runs Clippy and treats all warnings as errors. The command should complete without any errors.
+
+* [ ] #### **Step 0.5: Set Up Pre-Commit Hooks**
+
+  * **Action**: Use a tool like `pre-commit` to automate the running of `cargo fmt` and `cargo clippy` before each commit. This ensures that no unformatted code or code with linter warnings is ever committed to the repository.
+        1. Install `pre-commit` (e.g., `pip install pre-commit`).
+        2. Create a `.pre-commit-config.yaml` file in the root of the project.
+        3. Run `pre-commit install` to set up the git hooks.
+  * **Test (Manual)**:
+        1. Make a small, unformatted change to a Rust file.
+        2. Stage the file (`git add .`).
+        3. Try to commit the change (`git commit -m "test"`).
+        4. **Expected Result**: The commit should fail. The pre-commit hook should run, reformat the file, and then instruct you to re-stage the changes and commit again. The second commit attempt should succeed.
+
+---
+
 ## Phase 1: Project Setup & "Hello World" MCP Server
 
 **Goal**: Establish the project structure and confirm that Cursor can launch a basic version of our server.
