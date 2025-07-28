@@ -37,7 +37,7 @@ This document outlines a detailed, step-by-step plan to create a Rust-based MCP 
   * **Action**: `clippy` is the standard Rust linter. It's an incredibly powerful tool for catching common mistakes and improving code quality. It is typically installed with Rust.
   * **Test (Automated)**: Run `cargo clippy -- -D warnings` from the terminal. This command runs Clippy and treats all warnings as errors. The command should complete without any errors.
 
-* [ ] #### **Step 0.5: Set Up Pre-Commit Hooks**
+* [x] #### **Step 0.5: Set Up Pre-Commit Hooks**
 
   * **Action**: Use a tool like `pre-commit` to automate the running of `cargo fmt` and `cargo clippy` before each commit. This ensures that no unformatted code or code with linter warnings is ever committed to the repository.
         1. Install `pre-commit` (e.g., `pip install pre-commit`).
