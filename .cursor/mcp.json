@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "bioinformatics-server": {
+      "command": "cargo",
+      "args": [
+        "run",
+        "--quiet",
+        "--manifest-path",
+        "/home/nv/src/bio_mcp_server/Cargo.toml"
+      ]
+    }
+  }
+}

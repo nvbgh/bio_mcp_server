@@ -89,7 +89,7 @@ This document outlines a detailed, step-by-step plan to create a Rust-based MCP 
         2. The terminal will wait for input. Type a line of text (e.g., `Hello`) and press Enter.
         3. **Expected Result**: The program should immediately print the same line (`Hello`) back to the terminal.
 
-* [ ] #### **Step 1.4: Configure Cursor to Run the Server**
+* [x] #### **Step 1.4: Configure Cursor to Run the Server**
 
   * **Action**:
         1. Create a new directory `.cursor` in the project's root.
