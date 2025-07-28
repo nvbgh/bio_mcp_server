@@ -117,6 +117,15 @@ This document outlines a detailed, step-by-step plan to create a Rust-based MCP 
         2. Open the "Chat" panel and look for the list of available tools (you may need to type `@` to see them).
         3. **Expected Result**: You should see `@bioinformatics-server` listed as an available tool. Selecting it won't do anything useful yet, but its presence confirms that Cursor can find and start our server.
 
+* [x] #### **Step 1.5: Implement Basic Demo Tools**
+
+  * **Action**: Modify `src/main.rs` to handle simple, hardcoded tool calls. For example, if the input is `ping`, the server should respond with `pong`. If the input is `date`, it should respond with the current date. This will demonstrate the basic tool-handling mechanism before introducing complex logic.
+  * **Test (Manual)**:
+        1. In the Cursor chat, invoke `@bioinformatics-server` and send the message `ping`.
+        2. **Expected Result**: The server should respond with `pong`.
+        3. In the Cursor chat, invoke `@bioinformatics-server` and send the message `date`.
+        4. **Expected Result**: The server should respond with the current date.
+
 ---
 
 ## Phase 2: GraphQL Client Setup & Mock Query

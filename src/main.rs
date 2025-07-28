@@ -4,6 +4,10 @@ fn main() {
     let stdin = io::stdin();
     for line in stdin.lock().lines() {
         let line = line.expect("Could not read line from standard in");
-        println!("{line}");
+        match line.trim() {
+            "ping" => println!("pong"),
+            "date" => println!("{}", chrono::Local::now().date_naive()),
+            _ => println!("unknown command"),
+        }
     }
 }
