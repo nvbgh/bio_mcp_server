@@ -1,3 +1,9 @@
+use std::io::{self, BufRead};
+
 fn main() {
-    println!("Hello, world!");
+    let stdin = io::stdin();
+    for line in stdin.lock().lines() {
+        let line = line.expect("Could not read line from standard in");
+        println!("{line}");
+    }
 }

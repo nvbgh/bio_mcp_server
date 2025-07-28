@@ -81,7 +81,7 @@ This document outlines a detailed, step-by-step plan to create a Rust-based MCP 
 
   * **Test (Automated)**: Run `cargo check` from the terminal. The command should complete successfully without any errors, confirming the dependencies are correctly specified and can be resolved by Cargo.
 
-* [ ] #### **Step 1.3: Implement a Basic "Echo" Server**
+* [x] #### **Step 1.3: Implement a Basic "Echo" Server**
 
   * **Action**: Modify `src/main.rs` to read a single line from standard input (`stdin`) and print it back to standard output (`stdout`). This simulates receiving and acknowledging a message.
   * **Test (Manual)**:
